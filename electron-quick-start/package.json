@@ -1,0 +1,17 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "npm rebuild --runtime=electron --target=5.0.0 --disturl=https://atom.io/download/atom-shell --abi=70",
+	"build-linux": "electron-packager ./ --out ./ers-app --platform=linux --arch=x64 --overwrite --asar"
+  },
+  "devDependencies": {
+    "electron": "^5.0.0"
+  },
+  "dependencies": {
+    "electron-packager": "^15.1.0"
+  }
+}
